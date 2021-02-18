@@ -38,6 +38,18 @@ int main()
         << account1.getBalance();
     cout << "\naccount2: " << account2.getName() << " balance is $"
         << account2.getBalance() << endl;
+
+    // test withdraw method
+    cout << "enter withdrawal amount for account1" << endl;
+    int withdrawalAmount;
+    cin >> withdrawalAmount;
+    account1.withdraw(withdrawalAmount);
+    
+    // display balances
+    cout << "\n\naccount1: " << account1.getName() << " balance is $"
+        << account1.getBalance();
+    cout << "\naccount2: " << account2.getName() << " balance is $"
+        << account2.getBalance() << endl;
 }
 
 /**************************************************************************

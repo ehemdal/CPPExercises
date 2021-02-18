@@ -24,6 +24,18 @@ public:
         }
     }
 
+    // function to withdraw only a valid amount from the balance
+    void withdraw(int withdrawalAmount) {
+        if (withdrawalAmount <= 0) return;
+        if (balance >= withdrawalAmount)
+        {
+            balance -= withdrawalAmount;
+        }
+        else {
+            std::cout << "Withdrawal amount exceeded account balance" << std::endl;
+        }
+    }
+
     // function returns the account balance
     int getBalance() const {
         return balance;
