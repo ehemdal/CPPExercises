@@ -5,25 +5,16 @@
 
 using namespace std;
 
-void displayAccount(Account accountToDisplay) {
-    cout << accountToDisplay.getName() 
-         << " balance is $" 
-         << accountToDisplay.getBalance() << endl;
-}
-
 int main()
 {
     Account account1{ "Jane Green", 50 };
     Account account2{ "John Blue", -7 };
 
     // display initial balance of each object
-    // JEH: Read about operator overloading here:
-    // https://stackoverflow.com/questions/4421706/what-are-the-basic-rules-and-idioms-for-operator-overloading
-    // to learn why we have to display the output this way.
-    cout << "account1: ";
-    displayAccount(account1);
-    cout << "account2: ";
-    displayAccount(account2);
+    cout << "account1: " << account1.getName() << " balance is $"
+        << account1.getBalance();
+    cout << "\naccount2: " << account2.getName() << " balance is $"
+        << account2.getBalance();
 
     cout << "\n\nEnter deposit amount for account1: "; // prompt
     int depositAmount;
@@ -32,10 +23,10 @@ int main()
     account1.deposit(depositAmount); // add to account1's balance
 
     // display balances
-    cout << "account1: "; 
-    displayAccount(account1);
-    cout << "account2: ";
-    displayAccount(account2);
+    cout << "\n\naccount1: " << account1.getName() << " balance is $"
+        << account1.getBalance();
+    cout << "\naccount2: " << account2.getName() << " balance is $"
+        << account2.getBalance();
 
     cout << "\n\nEnter deposit amount for account2: "; // prompt
     cin >> depositAmount; // obtain user input
@@ -43,10 +34,10 @@ int main()
     account2.deposit(depositAmount); // add to account2 balance
 
     // display balances
-    cout << "account1: ";
-    displayAccount(account1);
-    cout << "account2: ";
-    displayAccount(account2);
+    cout << "\n\naccount1: " << account1.getName() << " balance is $"
+        << account1.getBalance();
+    cout << "\naccount2: " << account2.getName() << " balance is $"
+        << account2.getBalance() << endl;
 
     // test withdraw method
     cout << "enter withdrawal amount for account1" << endl;
@@ -55,10 +46,10 @@ int main()
     account1.withdraw(withdrawalAmount);
     
     // display balances
-    cout << "account1: ";
-    displayAccount(account1);
-    cout << "account2: ";
-    displayAccount(account2);
+    cout << "\n\naccount1: " << account1.getName() << " balance is $"
+        << account1.getBalance();
+    cout << "\naccount2: " << account2.getName() << " balance is $"
+        << account2.getBalance() << endl;
 }
 
 /**************************************************************************
