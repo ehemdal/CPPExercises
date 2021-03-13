@@ -28,7 +28,7 @@ int main()
             cout << "Try value " << i << " again" << endl;
             cin >> valueIn; 
         } 
-       std::sort(numberArray.begin(), numberArray.end()); // TODO: Find out why this sort is wiping out data
+       std::sort(numberArray.begin(), numberArray.end()); 
        if (false == (binary_search(numberArray.begin(), numberArray.end(), valueIn))) 
         {
             numberArray[0] = valueIn;
