@@ -1,12 +1,10 @@
-// ex7-33.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// ex7-33.cpp : First cut at the Maze exercise
 //
 
 #include <iostream>
 #include"Maze.h"
 #include<array>
 
-void mazeTraverse(Maze, int, int);
-void printMaze();
 int main()
 {
     std::array<std::array<char, 12>, 12> mazeArray
