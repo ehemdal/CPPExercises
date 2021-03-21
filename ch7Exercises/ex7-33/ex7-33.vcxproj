@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6ac5fc71-867a-49bd-84ee-f407ce2d1f2d}</ProjectGuid>
+    <ProjectGuid>{2224d5fa-6db3-4229-882f-99d108f1d898}</ProjectGuid>
     <RootNamespace>ex733</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -142,7 +142,7 @@
     <ClCompile Include="ex7-33.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="maze.h" />
+    <ClInclude Include="Maze.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,39 +1,27 @@
-// ex7-33.cpp : Traverse a maze
+// ex7-33.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
-#include <array>
-#include <string>
-
-using namespace std;
-
-const size_t columns{ 6 };
-const size_t rows{ 6 };
-void printArray(const array<array<char, columns>, rows>&);
+#include"Maze.h"
+#include<array>
 
 int main()
 {
+    std::array<std::array<char, 6>, 6> mazeArray
+    {  '#', '#','#','#', '#', '#',
+       '.', '.', '.', '.','.','.',
+       '#','#', '.', '#','.','#',
+       '#', '#','#','#', '#', '#',
+       '#', '#','#','#', '#', '#',
+       '#', '#','#','#', '#', '#' };
+      
+    int startcol{ 0 };
+    int startrow{ 1 };
 
  
-array<array<char, columns>, rows> maze = {  '#', '#', '#', '#', '#', '#',
-                                              '#', '.', '.', '.', '#', '#',
-                                              '.', '.', '#', '.', '#', '#', 
-                                              '#', '#', '#', '.', '#', '#',
-                                              '#', '#', '#', '.', '.', '.',
-                                              '#', '#', '#', '#', '#', '#' };
-printArray(maze);
+    std::cout << "Hello World!\n";
+    Maze MySampleMaze(mazeArray);
+    MySampleMaze.printMaze();
+}
 
-}
-void printArray(const array<std::array<char, columns>, rows>& a) {
-    // rows and columns start at the upper left
-    // RC0 C1 C2 ...
-    // R1
-    // R2
-    // ...
-    for (auto const& row : a) {
-        for (auto const& element : row) {
-            std::cout << element << ' ';
-        }
-        std::cout << endl;
-    }
-}
+
