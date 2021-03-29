@@ -26,6 +26,7 @@ void Welcome() {
 	std::cout << "*** your program.                             ***\n";
 }
 
+//TODO: troubleshoot the stream manipulators described in page 381 of the text.
 char sign(int arg) {
 	// return the sign of an instruction or data word
 	if (arg >= 0) {
@@ -46,7 +47,8 @@ void dumpMemory(int* m) {
 
 
 	for (int i = 0; i < MEMORY_SIZE; ++i) {
-		std::cout << std::setfill('0') << std::internal << sign(m[i]) << m[i] << " ";
+		//std::cout << std::setfill('0') << std::internal;
+		std::cout << sign(m[i]) << m[i] << " ";
 		if (0 == ((i+1) % 10)) std::cout << std::endl;
 	}
 }
@@ -54,9 +56,11 @@ void dumpMemory(int* m) {
 void loadProgram(int* m) {
 	int word{ 0 };
 	int address{ 0 };
-	while ((SENTINEL != word) && (address < MEMORY_SIZE)) {
+	for (address = 0; address < MEMORY_SIZE; address++){
 		std::cout << address << " ? ";
 		std::cin >> word;
-		memory[address++] = word;
+		if (SENTINEL != word) {
+			memory[address] = word;
+		} else return;
 	}
 }
