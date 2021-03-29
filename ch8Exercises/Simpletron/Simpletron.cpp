@@ -2,10 +2,11 @@
 //
 
 #include <iostream>
-#include "Opcodes.h"
 #include "Machine.h"
 
 int main()
 {
     Welcome();
+    loadProgram(memory);
+    dumpMemory(memory);
 }

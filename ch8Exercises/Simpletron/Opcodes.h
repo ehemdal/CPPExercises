@@ -1,6 +1,9 @@
 #pragma once
 //Opocodes for Simpletron
 
+// No-operation
+const int nop{ 0 };
+
 // I/O operations
 const int read{ 10 }; // read from keyboard to memory location
 const int write{ 11 }; //write a word from a memory location to the screen
@@ -19,4 +22,5 @@ const int multiply{ 33 }; // accumulator = accumulator * contents of memory loca
 const int branch{ 40 }; // Branch to memory location
 const int branchneg{ 41 }; // Branch to memory location if accumulator is negative
 const int branchzero{ 42 }; // Branch to memory location if accumulator is zero
-const int halt{ 43 }; // Halt)
+const int halt{ 43 }; // Halt
+
