@@ -8,6 +8,8 @@ int main()
 {
     Welcome();
     loadProgram(memory);
+    std::cout << "*** Program execution begins ***" << std::endl;
+
     while (halt != operationCode && instructionCounter < MEMORY_SIZE) {
 
         //Fetch the next instruction
@@ -70,8 +72,4 @@ int main()
             dumpMemory(memory);
         }
     }
-
-
-
-    dumpMemory(memory);
 }
