@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "Machine.h"
+#include <exception>
 
 int main()
 {
@@ -46,7 +47,14 @@ int main()
             break;
         
         case divide:
-            accumulator /= memory[operand];
+            try {
+                accumulator /= memory[operand];
+            }
+            catch (const std::runtime_error& e) {
+                std::cout << "Exception:" << std::endl;
+                std::cout << e.what() << std::endl;
+                dumpMemory(memory);
+            }
             break;
         
         case multiply:
