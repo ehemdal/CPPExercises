@@ -1,4 +1,4 @@
-// ex7.14.cpp : Exercise 7.13 reimplemented with a vector#include <iostream>
+// ex7.14.cpp : Exercise 7.13 reimplemented with a vector
 #include <iostream>
 #include <vector>
 #include <algorithm>
