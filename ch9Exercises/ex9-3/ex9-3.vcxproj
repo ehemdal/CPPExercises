@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{3f7f0b48-1fe9-4d1f-b521-cb913e779eb1}</ProjectGuid>
-    <RootNamespace>ex910</RootNamespace>
+    <ProjectGuid>{19ad492d-b741-423d-88ea-688f7d00bbc9}</ProjectGuid>
+    <RootNamespace>ex93</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>fig9-10</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,14 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CreateAndDestroy.cpp" />
-    <ClCompile Include="fig09_10.cpp" />
+    <ClCompile Include="Complex.cpp" />
+    <ClCompile Include="ex9-3.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CreateAndDestroy.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="README.txt" />
+    <ClInclude Include="Complex.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
