@@ -2,10 +2,12 @@
 //
 
 #include <iostream>
+#include "HugeInteger.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "HugeInteger example\n";
+    HugeInteger MyHugeInteger;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

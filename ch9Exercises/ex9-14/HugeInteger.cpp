@@ -2,8 +2,8 @@
 
 HugeInteger::HugeInteger()
 {
-	for (auto i : digits) {
-		*digits[i] = "0";
+	for (auto &i : digits) {
+		i = "0";
 	}
 }
 
@@ -38,7 +38,3 @@ bool HugeInteger::isZero()
 	return false;
 }
 
-bool HugeInteger::isEqualTo(HugeInteger, HugeInteger)
-{
-	return false;
-}
