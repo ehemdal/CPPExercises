@@ -1,4 +1,5 @@
-// ex9-3.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// ex9-3.cpp : Complex class example showing separation of interface and implementation.
+// Why is the destructor called 10 times if the constructor is called six times?
 //
 
 #include <iostream>
