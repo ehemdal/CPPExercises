@@ -3,7 +3,7 @@
 #include <iostream>
 #include <array>
 #include <string>
-
+constexpr auto INTEGERSIZE = 40;
 class HugeInteger {
 
 public:
@@ -20,7 +20,7 @@ public:
 	void output();
 
 private:
-	std::array <std::string, 40> digits;
+	std::array <std::string, INTEGERSIZE> digits;
 	int size{ 0 };
 	bool negative{ false };
 

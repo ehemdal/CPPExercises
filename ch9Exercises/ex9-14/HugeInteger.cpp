@@ -116,7 +116,7 @@ void HugeInteger::input(std::string x)
 		}
 
 	// Get the digits of this object into a string of the proper length
-	if (40 < x.length()) return; // could return an exception here
+	if (INTEGERSIZE < x.length()) return; // could return an exception here
 
 	// empty the digits array by setting the size property to zero.  We can't do this via a member function because the array
 	// doesn't know its size. We have to manage it.
