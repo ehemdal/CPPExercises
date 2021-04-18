@@ -4,7 +4,7 @@
 HugeInteger::HugeInteger()
 {
 	// Initialize a HugeInteger to zero, with size 1
-	digits2.at(0) = "0";
+	digits.at(0) = "0";
 	size = 1;
 	negative = false;
 }
@@ -29,7 +29,7 @@ bool HugeInteger::isEqualTo(HugeInteger IH)
 	//If sizes are the same, compare digit-by-digit
 	for (int i = 0; i < size; i++)
 	{
-		if (digits2.at(i) != IH.digits2.at(i)) {
+		if (digits.at(i) != IH.digits.at(i)) {
 			return false;
 		}
 	}
@@ -69,11 +69,11 @@ bool HugeInteger::isGreaterThan(HugeInteger HI)
 
 	// if the sizes are the same and the signs are the same, compare digit by digit
 	for (int i = 0; i < size; i++) {
-		if (digits2.at(i) > HI.digits2.at(i)) {
+		if (digits.at(i) > HI.digits.at(i)) {
 			if (bothArePositive) return true;
 			if (bothAreNegative) return false;
 		}
-		else if (digits2.at(i) < HI.digits2.at(i)) {
+		else if (digits.at(i) < HI.digits.at(i)) {
 			if (bothArePositive) return false;
 			if (bothAreNegative) return true;
 		}
@@ -93,7 +93,7 @@ bool HugeInteger::isLessThan(HugeInteger IH)
 bool HugeInteger::isZero()
 {
 	// The value is zero if the size is 1 and the value is "0"
-	if ((1 == size) && (digits2.at(0) == "0")) {
+	if ((1 == size) && (digits.at(0) == "0")) {
 		return true;
 	}
 	else return false;
@@ -125,7 +125,7 @@ void HugeInteger::input(std::string x)
 	// load the new digits in reverse order so least-significant digit in in data(0).
 	int j = x.length() - 1;
 	for (i = 0; i < static_cast<int>(x.length()); i++) {
-		digits2.at(j) = x[i];
+		digits.at(j) = x[i];
 		j--;
 	}
 	size = i;
@@ -138,8 +138,8 @@ void HugeInteger::output()
 	if (negative) {
 		std::cout << "-";
 	}
-	for (int i = size; i >= 0; i--) {
-		std::cout << digits2.at(i);
+	for (int i = (size - 1); i >= 0; i--) {
+		std::cout << digits.at(i);
 	}
 	std::cout << std::endl;
 }

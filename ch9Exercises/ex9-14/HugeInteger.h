@@ -20,8 +20,7 @@ public:
 	void output();
 
 private:
-	std::array <std::string, 41> digits2; //add one position for a sign
-	std::string digits[40]{ "0" };
+	std::array <std::string, 40> digits;
 	int size{ 0 };
 	bool negative{ false };
 
