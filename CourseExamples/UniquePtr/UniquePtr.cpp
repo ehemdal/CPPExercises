@@ -44,8 +44,4 @@ int main()
 	string2Ptr->assign(myString);
 	std::cout << "String2Ptr at " << string2Ptr << " contains :" << std::endl;
 	std::cout << *string2Ptr << std::endl;
-
-	std::unique_ptr<char[]> string3 = std::make_unique<char[]>(5);
-	gen_random(string3.get(), 5);
-	std::cout << "String3 contains " << (string3.get()) << std::endl;
 }
