@@ -1,0 +1,1 @@
+README: This project will not build because of the explicit default constructor.
