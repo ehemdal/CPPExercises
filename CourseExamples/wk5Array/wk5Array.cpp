@@ -46,7 +46,7 @@ public:
 };
 
 
-Array::Array(int* ptr = NULL, int size = 0)
+Array::Array(int* ptr = nullptr, int size = 0) //JEH fix, use nullptr
 {
     m_size = size;
     m_ptr = NULL;
@@ -58,7 +58,11 @@ Array::Array(int* ptr = NULL, int size = 0)
     }
 }
 
-Array::Array(int size = 0)
+// JEH fix:  Don't assign a default value, compiler won't know which default constructor
+// to use when calling Array(). Is it line 49 or this one?  By leaving the default "size = 0" here out,
+// the compiler can resolve the ambiguity.
+// Array::Array(int size = 0) <<<Original in course notes
+Array::Array(int size)
 {
     m_size = size;
     m_ptr = NULL;
@@ -66,7 +70,7 @@ Array::Array(int size = 0)
     {
         m_ptr = new int[size];
         for (int i = 0; i < size; i++)
-            m_ptr[i] = 0.0;
+            m_ptr[i] = 0; //JEH fix: Don't put a double into an int
     }
 }
 
