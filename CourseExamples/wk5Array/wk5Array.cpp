@@ -49,7 +49,7 @@ public:
 Array::Array(int* ptr = nullptr, int size = 0) //JEH fix, use nullptr
 {
     m_size = size;
-    m_ptr = NULL;
+    m_ptr = nullptr;
     if (size != 0)
     {
         m_ptr = new int[size];
@@ -65,7 +65,7 @@ Array::Array(int* ptr = nullptr, int size = 0) //JEH fix, use nullptr
 Array::Array(int size)
 {
     m_size = size;
-    m_ptr = NULL;
+    m_ptr = nullptr;
     if (size != 0)
     {
         m_ptr = new int[size];
