@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wk7arraytemplate", "wk7arra
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fig19_03", "fig19_03\fig19_03.vcxproj", "{887D18AC-E971-450A-9F90-8A03B76FD4B0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SingletonExample", "SingletonExample\SingletonExample.vcxproj", "{4D28C786-C385-463D-8B5D-318A0E3BDFBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{887D18AC-E971-450A-9F90-8A03B76FD4B0}.Release|x64.Build.0 = Release|x64
 		{887D18AC-E971-450A-9F90-8A03B76FD4B0}.Release|x86.ActiveCfg = Release|Win32
 		{887D18AC-E971-450A-9F90-8A03B76FD4B0}.Release|x86.Build.0 = Release|Win32
+		{4D28C786-C385-463D-8B5D-318A0E3BDFBE}.Debug|x64.ActiveCfg = Debug|x64
+		{4D28C786-C385-463D-8B5D-318A0E3BDFBE}.Debug|x64.Build.0 = Debug|x64
+		{4D28C786-C385-463D-8B5D-318A0E3BDFBE}.Debug|x86.ActiveCfg = Debug|Win32
+		{4D28C786-C385-463D-8B5D-318A0E3BDFBE}.Debug|x86.Build.0 = Debug|Win32
+		{4D28C786-C385-463D-8B5D-318A0E3BDFBE}.Release|x64.ActiveCfg = Release|x64
+		{4D28C786-C385-463D-8B5D-318A0E3BDFBE}.Release|x64.Build.0 = Release|x64
+		{4D28C786-C385-463D-8B5D-318A0E3BDFBE}.Release|x86.ActiveCfg = Release|Win32
+		{4D28C786-C385-463D-8B5D-318A0E3BDFBE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
