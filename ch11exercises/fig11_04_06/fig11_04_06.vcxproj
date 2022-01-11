@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d9f35b59-4d59-4e84-96a2-86ebac216d02}</ProjectGuid>
-    <RootNamespace>Fig1114</RootNamespace>
+    <ProjectGuid>{7a484a3e-5388-4d75-9377-ffa4e6fc0c1a}</ProjectGuid>
+    <RootNamespace>fig110406</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,12 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BasePlusCommissionEmployee.cpp" />
     <ClCompile Include="CommissionEmployee.cpp" />
-    <ClCompile Include="Fig11-14.cpp" />
+    <ClCompile Include="fig11_04_06.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BasePlusCommissionEmployee.h" />
     <ClInclude Include="CommissionEmployee.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
