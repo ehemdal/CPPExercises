@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d01cdc48-437b-4bbf-8617-cf7dd93206a0}</ProjectGuid>
-    <RootNamespace>ex814</RootNamespace>
+    <ProjectGuid>{62790de0-ae56-4384-a691-c62f4d1985c3}</ProjectGuid>
+    <RootNamespace>fig0807</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ex8-14.cpp" />
+    <ClCompile Include="fig08_07.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
