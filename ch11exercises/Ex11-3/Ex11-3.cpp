@@ -13,17 +13,24 @@ int main() {
    // get commission employee data
    cout << fixed << setprecision(2); // set floating-point formatting
 
-   // Because of composition, we need to call member functions of the CommissionEmployee object "thisEmployee" which is 
-   // a member of the BasePlusCommissionEmployee object "employee"  that we just created.
-   // We can do this if we make thisEmployee a public member of class BasePlusCommissionEmployee, but we probably want
-   // it to still be private.  In that case, we need public methods of class BasePlusCommissionEmployee that give us
-   // the ability to access the private member "thisEmployee" and call on its methods.
+   // Because of composition, I need to call member functions of the CommissionEmployee object "thisEmployee" which is 
+   // a member of the BasePlusCommissionEmployee object "employee"  that I just created.
+   // I want public methods of class BasePlusCommissionEmployee that give me
+   // the ability to access the private member "thisEmployee" and call on its methods.  
+   // 
+   // I could make thisEmployee a public member of class BasePlusCommissionEmployee, because the members of CommissionEmployee are
+   // private (so class CommissionEmployee would control their access).  But I might want to control how others will use
+   // these members when they use BasePlusCommissionEmployee, so I want thisEmployee to be private.
+   // 
+   // In that case, I need to create public methods in BasePlusCommissionEmployee that give me access to the private member
+   // "thisEmployee".  I'm reusing the names of the methods from class CommissionEmployee -- but these are different.
+   // 
    // Instead of inheriting these methods from the base class in the subclass, we are including objects of the base class type
-   // inside objects of the subclass and we are adding methods of the subclass type that "wrap" the methods of the base class
-   // which have the same names but are actually different methods.  
-   // Doing this via inheritance looks kind of like magic -- the methods are available without having to do anything.
-   // Doing this via composition is more explicit, and more visible.
-   // Don't be confused by the similar names of the methods and think about what is going on here
+   // inside objects of the subclass and we are adding methods of the subclass type that let us control access to
+   // the methods of the base class which have the same names but are different methods. 
+   // 
+   // Reusing CommissionEmployee via inheritance looks kind of like magic -- the methods are available without having to do 
+   // much of anything.  Doing this via composition is more explicit, and more visible.
    
    cout << "Employee information obtained by get functions: \n"
       << "\nFirst name is " << employee.getFirstName()
