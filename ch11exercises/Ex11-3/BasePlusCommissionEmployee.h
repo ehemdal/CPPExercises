@@ -12,16 +12,24 @@ class BasePlusCommissionEmployee {
 public:
    BasePlusCommissionEmployee(const std::string&, const std::string&,
       const std::string&, double = 0.0, double = 0.0, double = 0.0);
+   std::string getFirstName();
+   std::string getLastName();
+
+   std::string getSocialSecurityNumber();
+
+   double getGrossSales();
+
+   double getCommissionRate();
 
    void setBaseSalary(double); // set base salary
    double getBaseSalary() const; // return base salary
 
    double earnings() const; // calculate earnings
    std::string toString() const; // create string representation
-   CommissionEmployee thisEmployee;
-private:
 
+private:
    double baseSalary; // base salary
+   CommissionEmployee thisEmployee;
 };
 
 #endif

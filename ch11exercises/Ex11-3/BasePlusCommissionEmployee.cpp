@@ -18,6 +18,27 @@ BasePlusCommissionEmployee::BasePlusCommissionEmployee(
     setBaseSalary(salary); // validate and store base salary
 }
 
+string BasePlusCommissionEmployee::getFirstName()
+{
+    return thisEmployee.getFirstName();
+}
+
+string BasePlusCommissionEmployee::getLastName() {
+    return thisEmployee.getLastName();
+}
+
+string BasePlusCommissionEmployee::getSocialSecurityNumber() {
+    return thisEmployee.getSocialSecurityNumber();
+}
+
+double BasePlusCommissionEmployee::getGrossSales() {
+    return thisEmployee.getGrossSales();
+}
+double BasePlusCommissionEmployee::getCommissionRate()
+{
+    return thisEmployee.getCommissionRate();
+}
+
 // set base salary
 void BasePlusCommissionEmployee::setBaseSalary(double salary) {
    if (salary < 0.0) {

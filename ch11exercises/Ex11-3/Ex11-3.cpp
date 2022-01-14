@@ -1,4 +1,4 @@
-// Fig. 11.9: fig11_09.cpp now turned into Ex 11.3
+// Fig. 11.9: fig11_09.cpp now turned into Ex 11.3 by JEH
 // BasePlusCommissionEmployee class test program.
 #include <iostream>
 #include <iomanip>
@@ -12,15 +12,28 @@ int main() {
 
    // get commission employee data
    cout << fixed << setprecision(2); // set floating-point formatting
+
+   // Because of composition, we need to call member functions of the CommissionEmployee object "thisEmployee" which is 
+   // a member of the BasePlusCommissionEmployee object "employee"  that we just created.
+   // We can do this if we make thisEmployee a public member of class BasePlusCommissionEmployee, but we probably want
+   // it to still be private.  In that case, we need public methods of class BasePlusCommissionEmployee that give us
+   // the ability to access the private member "thisEmployee" and call on its methods.
+   // Instead of inheriting these methods from the base class in the subclass, we are including objects of the base class type
+   // inside objects of the subclass and we are adding methods of the subclass type that "wrap" the methods of the base class
+   // which have the same names but are actually different methods.  
+   // Doing this via inheritance looks kind of like magic -- the methods are available without having to do anything.
+   // Doing this via composition is more explicit, and more visible.
+   // Don't be confused by the similar names of the methods and think about what is going on here
+   
    cout << "Employee information obtained by get functions: \n"
-      << "\nFirst name is " << employee.thisEmployee.getFirstName()
-      << "\nLast name is " << employee.thisEmployee.getLastName()
+      << "\nFirst name is " << employee.getFirstName()
+      << "\nLast name is " << employee.getLastName()
       << "\nSocial security number is "
-      << employee.thisEmployee.getSocialSecurityNumber()
-      << "\nGross sales is " << employee.thisEmployee.getGrossSales()
-      << "\nCommission rate is " << employee.thisEmployee.getCommissionRate()
+      << employee.getSocialSecurityNumber()
+      << "\nGross sales is " << employee.getGrossSales()
+      << "\nCommission rate is " << employee.getCommissionRate()
       << "\nBase salary is " << employee.getBaseSalary() << endl;
-   employee.setBaseSalary(1000); // set base salary
+   employee.setBaseSalary(1000); // set base salary 
    cout << "\nUpdated employee information from function toString: \n\n"
       << employee.toString();
 
