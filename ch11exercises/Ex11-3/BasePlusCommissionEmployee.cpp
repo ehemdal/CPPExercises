@@ -44,7 +44,6 @@ void BasePlusCommissionEmployee::setBaseSalary(double salary) {
    if (salary < 0.0) {
       throw invalid_argument("Salary must be >= 0.0");
    }
-
    baseSalary = salary;
 }
 
