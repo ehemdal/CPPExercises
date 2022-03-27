@@ -30,6 +30,9 @@ int main()
             std::cout << memory[operand];
             break;
 
+        case writeNL:
+            std::cout << memory[operand] << std::endl;
+
         case load:
             accumulator = memory[operand];
             break;
