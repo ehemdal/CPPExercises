@@ -1,5 +1,5 @@
 #pragma once
-//Opocodes for Simpletron
+//Opcodes for Simpletron
 
 // No-operation
 const int nop{ 0 };
@@ -17,6 +17,7 @@ const int add{ 30 }; // accumulator = accumulator + contents of memory location.
 const int subtract{ 31 }; //accumulator = accumulator - contents of memory location
 const int divide{ 32 }; // accumulator = accumulator / contents of memory location
 const int multiply{ 33 }; // accumulator = accumulator * contents of memory location
+const int modulo{ 34 }; // accumulator = accumulator % contents of memory location
 
 //Transfer-of-control
 const int branch{ 40 }; // Branch to memory location

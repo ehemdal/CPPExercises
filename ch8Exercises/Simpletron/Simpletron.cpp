@@ -15,8 +15,8 @@ int main()
 
         //Fetch the next instruction
         instructionRegister = memory[instructionCounter];
-        operationCode = instructionRegister / 100;
-        operand = instructionRegister % 100;
+        operationCode = instructionRegister / MEMORY_SIZE;
+        operand = instructionRegister % MEMORY_SIZE;
         instructionCounter++;
 
         // Decode the instruction
@@ -59,6 +59,10 @@ int main()
         
         case multiply:
             accumulator *= memory[operand];
+            break;
+
+        case modulo:
+            accumulator %= memory[operand];
             break;
         
         case branch:

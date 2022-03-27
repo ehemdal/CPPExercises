@@ -3,7 +3,7 @@
 #include <iostream>
 #include <iomanip>
 
-constexpr auto MEMORY_SIZE = 100;
+constexpr auto MEMORY_SIZE = 1000;
 constexpr auto SENTINEL = -99999;
 
 // Main memory array, uses default initialization to clear all memory to zeroes.
@@ -18,7 +18,7 @@ int operand{ 0 };
 
 void Welcome() {
 	std::cout << "***           Welcome to Simpletron            ***\n";
-	std::cout << "*** Please enter your progeam one instruction  ***\n"; 
+	std::cout << "*** Please enter your program one instruction  ***\n"; 
 	std::cout << "*** (or data word) at a time. I will type the  ***\n";
 	std::cout << "*** location number and a question mark (?).   ***\n";
 	std::cout << "*** You then type the word for that location.  ***\n";
