@@ -7,7 +7,7 @@ const int nop{ 0 };
 // I/O operations
 const int read{ 10 }; // read from keyboard to memory location
 const int write{ 11 }; //write a word from a memory location to the screen
-const int writeNL{ 12 }; //write a word from a memory location to the screen including a newline
+const int writenl{ 12 }; //write a word from a memory location to the screen including a newline
 
 // Load and store operations
 const int load{ 20 }; // load the contents of a memory location to the accumulator

@@ -30,7 +30,7 @@ int main()
             std::cout << memory[operand];
             break;
 
-        case writeNL:
+        case writenl:
             std::cout << memory[operand] << std::endl;
 
         case load:
