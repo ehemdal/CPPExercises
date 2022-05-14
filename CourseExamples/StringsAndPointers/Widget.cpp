@@ -21,6 +21,7 @@ void Widget::getID(char* s, const int len) {
 		"0123456789"
 		"ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 		"abcdefghijklmnopqrstuvwxyz";
+	char hiddenString[] = "You can't see me";
 
 	for (int i = 0; i < len; ++i) {
 		s[i] = alphanum[rand() % (sizeof(alphanum) - 1)];
