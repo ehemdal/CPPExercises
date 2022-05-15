@@ -4,7 +4,7 @@
 Widget::Widget(int nbr) {
 	cout << "\nCalling the Widget constructor" << endl;
 	this->WhatIAm = "I am a Widget";
-	this->getID(idPtr, DEVICE_SERIAL_LENGTH);
+	this->getID(idPtr, DEVICE_ID_LENGTH);
 	this->widgetSize = 6;
 	this->widgetNumber = nbr;
 }
