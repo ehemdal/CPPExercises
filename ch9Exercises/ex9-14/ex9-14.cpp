@@ -30,5 +30,7 @@ int main()
     if (I3.isGreaterThan(I4)) std::cout << "I3 is greater than I4" << std::endl;
     if (I3 > I4) std::cout << "I3 is greater than I4" << std::endl;
     if (I3.isLessThan(I4)) std::cout << "I3 is less than I4" << std::endl;
+    if (I3 < I4) std::cout << "I3 is less than I4" << std::endl;
     if (I4.isGreaterThan(I3)) std::cout << "I4 is greater than I3" << std::endl;
+    if (I4 > I3) std::cout << "I4 is greater than I3" << std::endl;
 }
