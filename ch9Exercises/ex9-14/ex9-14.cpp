@@ -1,4 +1,4 @@
-// ex9-14.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// ex9-14.cpp : Textbook example with extensions to do the same comparison functions using operator overloading
 //
 
 #include <iostream>
@@ -20,7 +20,15 @@ int main()
         std::cout << "I3 and I4 are the same" << std::endl;
     }
     else std::cout << "I3 and I4 are not the same" << std::endl;
+
+    if (I3 == I4) {
+        std::cout << "I3 and I4 are the same" << std::endl;
+    }
+    if (I3 != I4) {
+        std::cout << "I3 and I4 are not equal" << std::endl;
+    }
     if (I3.isGreaterThan(I4)) std::cout << "I3 is greater than I4" << std::endl;
+    if (I3 > I4) std::cout << "I3 is greater than I4" << std::endl;
     if (I3.isLessThan(I4)) std::cout << "I3 is less than I4" << std::endl;
     if (I4.isGreaterThan(I3)) std::cout << "I4 is greater than I3" << std::endl;
 }

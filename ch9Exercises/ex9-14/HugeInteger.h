@@ -11,8 +11,12 @@ public:
 	HugeInteger(std::string);
 	~HugeInteger();
 
+	bool operator>(const HugeInteger& H);
+
 	bool isEqualTo(HugeInteger);
+	bool operator==(HugeInteger& HI);
 	bool isNotEqualTo(HugeInteger);
+	bool operator!=(HugeInteger& IH);
 	bool isGreaterThan(HugeInteger);
 	bool isLessThan(HugeInteger);
 	bool isZero();

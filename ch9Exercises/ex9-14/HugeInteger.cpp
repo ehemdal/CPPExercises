@@ -16,8 +16,44 @@ HugeInteger::HugeInteger(std::string IH)
 
 
 
-HugeInteger::~HugeInteger()
-{
+HugeInteger::~HugeInteger() {}
+
+bool HugeInteger::operator > (const HugeInteger& HI) {
+	bool bothArePositive{ false };
+	bool bothAreNegative{ false };
+
+	// if this is positive and HI is negative, this is greater than HI
+	if (!negative && HI.negative) return true;
+
+	// if HI is positive and this is negative, this is not greater than HI
+	if (negative && !HI.negative) return false;
+
+	// if both have positive sign, and this size is larger, it is greater than HI
+	if (!negative && !HI.negative) {
+		bothArePositive = true;
+		if (size > HI.size) return true;
+	}
+
+	// if both are negative and this size is larger, it is not greater than HI
+	if (negative && HI.negative) {
+		bothAreNegative = true;
+		if (size > HI.size) return false;
+	}
+
+	// if the sizes are the same and the signs are the same, compare digit by digit
+	for (int i = 0; i < size; i++) {
+		if (digits.at(i) > HI.digits.at(i)) {
+			if (bothArePositive) return true;
+			if (bothAreNegative) return false;
+		}
+		else if (digits.at(i) < HI.digits.at(i)) {
+			if (bothArePositive) return false;
+			if (bothAreNegative) return true;
+		}
+		else continue;
+	}
+
+	return false; // they must be equal
 }
 
 bool HugeInteger::isEqualTo(HugeInteger IH)
@@ -36,9 +72,30 @@ bool HugeInteger::isEqualTo(HugeInteger IH)
 	return true;
 }
 
+bool HugeInteger::operator == (HugeInteger& IH) {
+
+	if (size != IH.size) return false;
+	if (negative != IH.negative) return false;
+
+	for (int i = 0; i < size; i++)
+	{
+		if (digits.at(i) != IH.digits.at(i)) {
+			return false;
+		}
+	}
+	return true;
+}
+
 bool HugeInteger::isNotEqualTo(HugeInteger HI)
 {
 	if (this->isEqualTo(HI)) {
+		return false;
+	}
+	else return true;
+}
+
+bool HugeInteger::operator != (HugeInteger& IH) {
+	if (this->isEqualTo(IH)) {
 		return false;
 	}
 	else return true;
