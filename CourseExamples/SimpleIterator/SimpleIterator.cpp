@@ -33,6 +33,7 @@ int main()
 
 	// Accessing the elements without using iterators -- 
 	// You need to know the length of the vector for this to work.
+	// Uncommenting this code will cause an error.
 	/*
 	for (j = 0; j < 4; ++j) {
 		cout << v[j] << " ";
@@ -56,6 +57,28 @@ int main()
 	for (i = v.begin(); i != v.end(); ++i) {
 		cout << *i << " ";
 	}
+	cout << endl;
+
+	// Using some member functions
+	// Erase all even numbers, show an inline declaration too
+	for (std::vector<int>::iterator it = v.begin(); it != v.end(); ) {
+		if (*it % 2 == 0) {
+			it = v.erase(it);
+		}
+		else {
+			++it;
+		}
+	}
+
+	// Accessing the elements using iterators
+	for (i = v.begin(); i != v.end(); ++i) {
+		cout << *i << " ";
+	}
+	cout << endl;
+
+	cout << "Vector v has size " << v.size() << endl;
+	cout << "and maximum size " << v.max_size() << endl;
+	cout << "Capacity: " << v.capacity() << endl;
 
 	return 0;
 }
