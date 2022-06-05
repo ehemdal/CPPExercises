@@ -58,6 +58,15 @@ int main()
 		cout << *i << " ";
 	}
 	cout << endl;
+	// Adding elements at locations in the vector
+	v.at(1) = 5;
+	v.at(3) = 6;
+
+	// Accessing the elements using iterators
+	for (i = v.begin(); i != v.end(); ++i) {
+		cout << *i << " ";
+	}
+	cout << endl;
 
 	// Using some member functions
 	// Erase all even numbers, show an inline declaration too
@@ -69,7 +78,7 @@ int main()
 			++it;
 		}
 	}
-
+	
 	// Accessing the elements using iterators
 	for (i = v.begin(); i != v.end(); ++i) {
 		cout << *i << " ";
