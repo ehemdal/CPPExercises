@@ -93,7 +93,7 @@ Array<T>::Array(int size)
     {
         m_ptr = new T[size];
         for (int i = 0; i < size; i++)
-            m_ptr[i] = 0.0;
+            m_ptr[i] = 0;
     }
 }
 
