@@ -14,7 +14,10 @@ int main()
 	std::unique_ptr<int> valuePtr(new int(15));
 	std::unique_ptr<int> valuePtrNow(std::move(valuePtr));
 	std::cout << "valuePtrNow = " << *valuePtrNow << '\n';
+	// Line 18 will cause an exception
 	//std::cout << "valuePtr = " << *valuePtr << '\n';
+	// VS2022: Line 23 generates C26800 warning because valuePtr was moved.  See
+	// https://docs.microsoft.com/en-us/cpp/code-quality/c26800?view=msvc-170
 	std::cout << "Has valuePtr an associated object? "
 		<< std::boolalpha
 		<< static_cast<bool>(valuePtr) << '\n';
