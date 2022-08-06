@@ -1,6 +1,7 @@
 #pragma once
 #include<array>
 #include<iostream>
+#include<windows.h> // For Sleep() to show the operation of the program
 
 class Maze {
 public:
@@ -45,6 +46,7 @@ public:
     };
 
     void printMaze() {
+        system("cls"); // This is Windows-specific
         for (int i = 0; i < cols; i++)
         {
             for (int j = 0; j < rows; j++)
@@ -53,6 +55,7 @@ public:
             }
             std::cout << std::endl;
         }
+        Sleep(1000);
     };
 
 private:
