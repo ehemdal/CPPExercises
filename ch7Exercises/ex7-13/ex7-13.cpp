@@ -1,4 +1,4 @@
-// ex7-13.cpp : Read in 20 numbers between 10 and 100 inclusive. As each number is read, validate it
+// ex7-13.cpp (10th edition): Read in 20 numbers between 10 and 100 inclusive. As each number is read, validate it
 // and store it in the array only if it isn't a duplicate of a number already read. After reading, display only
 // the unique values that were entered. Use the smallest possible array, but provide for the worst case
 // when all 20 numbers are different.

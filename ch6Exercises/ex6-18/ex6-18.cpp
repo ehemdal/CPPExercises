@@ -1,4 +1,4 @@
-// ex6-18.cpp : Exponentiation
+// ex6-18.cpp (10th edition): Exponentiation
 //
 
 #include <iostream>

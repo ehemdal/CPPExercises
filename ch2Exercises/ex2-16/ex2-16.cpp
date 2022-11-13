@@ -1,4 +1,4 @@
-/* Exercise 2.16
+/* Exercise 2.16 (10th edition)
 Prompt the user for two numbers, obtain the numbers from the user, and print the sum, product, difference, and quotient.
 */
 

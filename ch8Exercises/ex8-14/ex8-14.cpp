@@ -1,4 +1,4 @@
-// ex8-14.cpp : What does this code do?
+// ex8-14.cpp (10th edition): What does this code do?
 //
 
 #include <iostream>

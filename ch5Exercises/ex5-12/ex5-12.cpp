@@ -1,4 +1,4 @@
-// ex5-12.cpp : Display the product of the first 15 odd integers
+// ex5-12.cpp (10th edition): Display the product of the first 15 odd integers
 //
 
 #include <iostream>

@@ -1,4 +1,4 @@
-// ex6-19.cpp : Find the hypotenuse of a right triangle given the opposite two sides.
+// ex6-19.cpp (10th edition): Find the hypotenuse of a right triangle given the opposite two sides.
 //
 
 #include <iostream>

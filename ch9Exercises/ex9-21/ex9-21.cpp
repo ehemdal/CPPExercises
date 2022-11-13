@@ -1,4 +1,4 @@
-// ex9-21.cpp : IntegerSet exercise
+// ex9-21.cpp (10th edition): IntegerSet exercise
 
 #include <iostream>
 #include "IntegerSet.h"

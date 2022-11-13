@@ -1,4 +1,4 @@
-// ex7-17.cpp : What does this program do?
+// ex7-17.cpp (10th edition): What does this program do?
 //
 
 #include <iostream>

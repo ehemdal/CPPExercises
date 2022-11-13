@@ -1,4 +1,4 @@
-// ex5-13.cpp : Factorials example
+// ex5-13.cpp (10th edition): Factorials example
 // What's wrong with using data type long as the textbook suggests?  Define TEXT_VERSION to find out
 // Hint:  see https://docs.microsoft.com/en-us/cpp/cpp/data-type-ranges?view=msvc-160
 

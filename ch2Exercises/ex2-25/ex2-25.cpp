@@ -1,4 +1,4 @@
-// ex2-25.cpp : Is X a multiple of Y?
+// ex2-25.cpp : Is X a multiple of Y? (10th edition)
 //
 
 #include <iostream>

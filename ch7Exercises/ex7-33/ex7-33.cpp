@@ -1,4 +1,4 @@
-// ex7-33.cpp : First cut at the Maze exercise
+// ex7-33.cpp (10th edition): First cut at the Maze exercise
 //
 
 #include <iostream>

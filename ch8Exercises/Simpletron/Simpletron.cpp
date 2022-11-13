@@ -1,4 +1,4 @@
-// Simpletron.cpp : Simple CPU simulator
+// Simpletron.cpp (10th edition): Simple CPU simulator
 //
 
 #include <iostream>

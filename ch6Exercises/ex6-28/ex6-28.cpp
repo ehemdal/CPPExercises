@@ -1,4 +1,4 @@
-// ex6-28.cpp : isPerfect exercise
+// ex6-28.cpp (10th edition): isPerfect exercise
 // Find the perfect numbers less than 100,000.
 // For an answer to check, visit https://en.wikipedia.org/wiki/List_of_perfect_numbers
 

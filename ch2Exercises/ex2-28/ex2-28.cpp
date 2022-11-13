@@ -1,5 +1,5 @@
 // ex2-28.cpp : Print the digits in a five-digit integer with three spaces between each one.
-//
+// (10th edition)
 
 #include <iostream>
 using namespace std;

@@ -1,4 +1,4 @@
-// Fig. 3.5: AccountTest.cpp
+// Fig. 3.5 (10th edition): AccountTest.cpp
 // Using the Account constructor to initialize the name data
 // member at the time each Account object is created.
 #include <iostream>

@@ -1,4 +1,4 @@
-// ex5-10.cpp : What does this print?
+// ex5-10.cpp (10th edition): What does this print?
 #include <iostream>
 using namespace std;
 

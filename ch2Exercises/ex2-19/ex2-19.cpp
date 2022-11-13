@@ -1,5 +1,5 @@
 // ex2-19.cpp : Program takes three integers and prints sum, average, product, smallest, and largest of these numbers.
-//
+// (10th edition)
 
 #include <iostream>
 using namespace std;

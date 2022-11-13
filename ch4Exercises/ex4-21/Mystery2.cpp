@@ -1,4 +1,4 @@
-// ex4-21.cpp : Mystery2 -- what does this program do?
+// ex4-21.cpp (10th edition): Mystery2 -- what does this program do?
 
 #include <iostream>
 using namespace std;

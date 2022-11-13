@@ -1,4 +1,4 @@
-// Fig. 3.9: AccountTest.cpp
+// Fig. 3.9 (10th edition): AccountTest.cpp
 // Displaying and updating Account balances.
 #include <iostream>
 #include "Account.h"

@@ -1,5 +1,5 @@
 // ex2-24.cpp : Accept an integer from the keyboard and print whether it is odd or even.
-//
+// (10th edition)
 
 #include <iostream>
 using namespace std;

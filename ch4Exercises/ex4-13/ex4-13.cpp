@@ -1,4 +1,4 @@
-// ex4-13.cpp : MPG calculator
+// ex4-13.cpp (10th edition): MPG calculator
 /*
     Develop a program that uses a while loop to iput the miles driver and gallons used for each trip.
     Program should calculate and display the MG obtained for each trip and the combined MPG  for all tankfuls up to this point.

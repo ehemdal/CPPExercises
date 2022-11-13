@@ -1,4 +1,4 @@
-// ex5-19.cpp : Calculating PI
+// ex5-19.cpp (10th edition): Calculating PI
 //
 //#define BIG_RUN 
 #include <iostream>

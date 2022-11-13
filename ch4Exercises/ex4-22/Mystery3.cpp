@@ -1,4 +1,4 @@
-// ex4-22.cpp : Mystery3 -- What does this program do?
+// ex4-22.cpp (10th edition): Mystery3 -- What does this program do?
 //
 
 #include <iostream>

@@ -1,4 +1,4 @@
-// ex2-18.cpp :Comparing integers
+// ex2-18.cpp :Comparing integers (10th edition)
 //
 
 #include <iostream>

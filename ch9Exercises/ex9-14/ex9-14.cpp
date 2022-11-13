@@ -1,4 +1,4 @@
-// ex9-14.cpp : Textbook example with extensions to do the same comparison functions using operator overloading
+// ex9-14.cpp (10th edition): Textbook example with extensions to do the same comparison functions using operator overloading
 //
 
 #include <iostream>

@@ -1,4 +1,4 @@
-/* Exercise 2.17: Printing
+/* Exercise 2.17: Printing (10th edition)
    Print 1 2 3 4 on one line, four different ways.
  */
 
