@@ -4,19 +4,41 @@
 
 using namespace std;
 
-int accum = 0;
+/*
+	Example of using a mutex to synchronize threads, adapted from https://www.geeksforgeeks.org/std-mutex-in-cpp/
+*/
+
+int accum_nolock = 0;
+int accum_lock = 0;
 mutex accum_mutex;
 
-void square(int x) {
-	int temp = x * x;
+static void count_nolock() {
+	for (int i = 0; i < 1000000; i++)
+	{
+		accum_nolock++;
+	}
+}
+static void count_lock() {
 	accum_mutex.lock();
-	accum += temp;
+	for (int i = 0; i < 1000000; i++) 
+	{
+		accum_lock++;
+	}
 	accum_mutex.unlock();
 }
 
 int main() {
-	thread th(&square, 100);
-	th.join();
-	cout << "Outside thread" << endl;
+	thread th1(&count_nolock);
+	thread th2(&count_nolock);
+	thread th3(&count_lock);
+	thread th4(&count_lock);
+
+	th1.join();
+	th2.join();
+	th3.join();
+	th4.join();
+	cout << "In main, accum_nolock = " << accum_nolock << endl;
+	cout << "in main, accum_lock = " << accum_lock << endl;
+
 	return 0;
 }

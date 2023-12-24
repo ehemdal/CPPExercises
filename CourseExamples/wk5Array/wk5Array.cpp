@@ -89,9 +89,7 @@ int& Array::operator[](int index)
 {
     if (index >= m_size)
     {
-        // It should be exception here
-        cout << "Array index is bigger that the size of array, terminating the program";
-        exit(0);
+        throw std::invalid_argument("Index value is greater than array size");
     }
     return m_ptr[index];
 }
@@ -224,7 +222,13 @@ int main()
     cout << ++e;
     cout << e;
     cout << --e;
-
-
+    
+    // This isn't going to work...
+    try {
+        cout << a[15] << endl;
+    }
+    catch (const std::exception& e) {
+        cout <<  e.what() << endl;
+    }
     return 0;
 }

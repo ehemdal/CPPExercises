@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void func(int x) {
+static void func(int x) {
 	cout << "Inside thread " << x << endl;
 }
 

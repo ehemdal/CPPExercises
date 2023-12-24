@@ -19,5 +19,13 @@ int main()
     int x = 5;
     std::unique_ptr<int> ptr2x(&x);
     s->integers.push_back(std::move(ptr2x));
+    cout << "Starting getSampleData from the singleton: " << s->getSampleData() << endl;
+    s->setSampleData(25);
+    cout << "New getSampleData from the singleton: " << s->getSampleData() << endl;
+    
+    // Get the raw pointer for our unique_ptr; can't pass a unique_ptr by value
+    int* myInt = s->integers.at(0).get();
+    cout << "Our integer value: " << *myInt << endl;
+
     return 0;
 }

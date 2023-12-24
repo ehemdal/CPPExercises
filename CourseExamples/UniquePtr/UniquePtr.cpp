@@ -16,13 +16,14 @@ int main()
 	std::cout << "valuePtrNow = " << *valuePtrNow << '\n';
 	// Line 18 will cause an exception
 	//std::cout << "valuePtr = " << *valuePtr << '\n';
-	// VS2022: Line 23 generates C26800 warning because valuePtr was moved.  See
+	// VS2022: Line 23 generates C26800 warning because valuePtr was moved to valuePtrNow.  
+	// valuePtr is invalid now. See
 	// https://docs.microsoft.com/en-us/cpp/code-quality/c26800?view=msvc-170
 	std::cout << "Has valuePtr an associated object? "
 		<< std::boolalpha
 		<< static_cast<bool>(valuePtr) << '\n';
 
-	// RAII - initialize when you acquire. . .
+	// RAII "Resource Acquisition Is Initialization" - initialize when you acquire. . .
 	std::unique_ptr<std::string> string1Ptr(new std::string("ABCD"));
 	std::cout << "String1Ptr is " << string1Ptr << std::endl;
 	std::cout << "String1Ptr points to " << *string1Ptr << std::endl;

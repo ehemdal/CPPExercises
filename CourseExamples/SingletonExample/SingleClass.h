@@ -2,10 +2,9 @@
 #include <vector>
 #include <memory>
 class SingleClass {
-	// Pointer to my singleton Manager object
+	// Pointer to my singleton "Manager" object
 	static SingleClass* instance;
 	int SampleData;
-
 	SingleClass();
 
 public:
