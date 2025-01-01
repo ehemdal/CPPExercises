@@ -1,5 +1,4 @@
-// SimpleArrays.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// SimpleArrays.cpp : Shows classic array syntax and pointers
 
 #include <iostream>
 using namespace std;
