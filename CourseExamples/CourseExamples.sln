@@ -39,6 +39,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClassicPointers", "ClassicP
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BadPointer", "BadPointer\BadPointer.vcxproj", "{B57F05A1-6733-425C-A404-F614D8E15532}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleArrays", "SimpleArrays\SimpleArrays.vcxproj", "{58B4A131-5CA5-44BD-B845-DB2BDC79D48F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -265,6 +267,18 @@ Global
 		{B57F05A1-6733-425C-A404-F614D8E15532}.Release|x64.Build.0 = Release|x64
 		{B57F05A1-6733-425C-A404-F614D8E15532}.Release|x86.ActiveCfg = Release|Win32
 		{B57F05A1-6733-425C-A404-F614D8E15532}.Release|x86.Build.0 = Release|Win32
+		{58B4A131-5CA5-44BD-B845-DB2BDC79D48F}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{58B4A131-5CA5-44BD-B845-DB2BDC79D48F}.Debug|Any CPU.Build.0 = Debug|x64
+		{58B4A131-5CA5-44BD-B845-DB2BDC79D48F}.Debug|x64.ActiveCfg = Debug|x64
+		{58B4A131-5CA5-44BD-B845-DB2BDC79D48F}.Debug|x64.Build.0 = Debug|x64
+		{58B4A131-5CA5-44BD-B845-DB2BDC79D48F}.Debug|x86.ActiveCfg = Debug|Win32
+		{58B4A131-5CA5-44BD-B845-DB2BDC79D48F}.Debug|x86.Build.0 = Debug|Win32
+		{58B4A131-5CA5-44BD-B845-DB2BDC79D48F}.Release|Any CPU.ActiveCfg = Release|x64
+		{58B4A131-5CA5-44BD-B845-DB2BDC79D48F}.Release|Any CPU.Build.0 = Release|x64
+		{58B4A131-5CA5-44BD-B845-DB2BDC79D48F}.Release|x64.ActiveCfg = Release|x64
+		{58B4A131-5CA5-44BD-B845-DB2BDC79D48F}.Release|x64.Build.0 = Release|x64
+		{58B4A131-5CA5-44BD-B845-DB2BDC79D48F}.Release|x86.ActiveCfg = Release|Win32
+		{58B4A131-5CA5-44BD-B845-DB2BDC79D48F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
