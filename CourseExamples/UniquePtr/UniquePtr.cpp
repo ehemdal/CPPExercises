@@ -2,7 +2,7 @@
 //
 // Step through this program to observe
 //	How a smart pointer gets created
-//  What happens to valuePtr after it gets moved to valuePtrNow (uncomment line 17, recompile, and try to run :-) )
+//  What happens to valuePtr after it gets moved to valuePtrNow (uncomment line 18, recompile, and try to run :-) )
 
 #include <iostream>
 #include <memory>
