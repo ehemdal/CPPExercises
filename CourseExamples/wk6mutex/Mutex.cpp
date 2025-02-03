@@ -5,7 +5,9 @@
 using namespace std;
 
 /*
-	Example of using a mutex to synchronize threads, adapted from https://www.geeksforgeeks.org/std-mutex-in-cpp/
+	Example of using a mutex to synchronize threads, adapted from 
+	https://www.geeksforgeeks.org/std-mutex-in-cpp/
+	Run this several times and compare the lock and nolock results.
 */
 
 int accum_nolock = 0;

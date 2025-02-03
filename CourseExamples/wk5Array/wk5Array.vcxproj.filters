@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="wk5Array.cpp">
+    <ClCompile Include="ArrayOverload.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

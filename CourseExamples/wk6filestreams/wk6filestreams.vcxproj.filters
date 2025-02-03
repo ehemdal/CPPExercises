@@ -15,8 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="wk6filestreams.cpp">
+    <ClCompile Include="Filestreams.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readFrom.txt" />
+    <Text Include="writeTo.txt" />
   </ItemGroup>
 </Project>

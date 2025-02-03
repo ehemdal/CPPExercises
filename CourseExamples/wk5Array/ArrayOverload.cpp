@@ -1,3 +1,4 @@
+// Examples of operator overloading so we can use <<, =, ==, and != on arrays.
 #include <iostream>
 #include <cstdlib>
 

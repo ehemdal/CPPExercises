@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="wk6task.cpp">
+    <ClCompile Include="Future.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

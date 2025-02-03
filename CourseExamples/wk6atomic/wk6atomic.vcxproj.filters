@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="wk6atomic.cpp">
+    <ClCompile Include="AtomicVariable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
