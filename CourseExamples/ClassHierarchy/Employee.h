@@ -6,6 +6,12 @@ using namespace std;
 class Employee : public CommunityMember
 {
 public:
+		Employee()
+		{
+			cout << "Default Employee constructor called" << endl;
+			this->taxID = "None";
+			this->salary = 0;
+		}
 		Employee(string name, string homeAddress, string tax_id, float pay_amt) 
 			: taxID(tax_id), salary(pay_amt)
 		{
@@ -24,6 +30,6 @@ public:
 		string getTaxID() const { return taxID; }
 		float getSalary() const { return salary; }
 private:
-		string taxID;
-		float salary;
+	string taxID;
+	float salary;
 };

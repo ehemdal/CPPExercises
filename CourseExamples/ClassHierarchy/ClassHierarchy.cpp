@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Student.h"
 #include "Employee.h"
+#include "Faculty.h"
 int main()
 {
     Student NewStudent = Student("Joe Verdietz", "205 Elm St", 2025, "Henderson Hall");
@@ -17,6 +18,11 @@ int main()
     std::cout << StaffMember.getAddress() << endl;
     std::cout << StaffMember.getTaxID() << endl;
     std::cout << StaffMember.getSalary() << endl;
+
+    Faculty Professor = Faculty();
+    std::cout << Professor.getName() << endl;
+    std::cout << Professor.office << endl;
+    std::cout << Professor.hasTenure << endl;
 
 }
 
