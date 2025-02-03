@@ -2,7 +2,7 @@
 #include "Faculty.h"
 using namespace std;
 
-class Teacher : public Faculty
+class Teacher : virtual public Faculty
 {
 public:
 	Teacher() : className("Intro Class")
@@ -13,11 +13,16 @@ public:
 	{
 		cout << "Teacher constructor called" << endl;
 	}
-
+	Teacher(const string& className)
+		: className(className)
+	{
+	}
 	~Teacher()
 	{
 		cout << "Teacher destructor called" << endl;
 	}
 
 	string className;
+
+
 };

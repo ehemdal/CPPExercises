@@ -2,7 +2,7 @@
 #include "Faculty.h"
 using namespace std;
 
-class Administrator : public Faculty
+class Administrator : virtual public Faculty
 {
 public:
 	Administrator() : departmentName("Default Department")
