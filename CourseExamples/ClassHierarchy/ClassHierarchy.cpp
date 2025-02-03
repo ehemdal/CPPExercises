@@ -36,6 +36,8 @@ int main()
     AdministratorTeacher DeptChair = AdministratorTeacher();
     cout << "Department Chair " << DeptChair.CommunityMember::getName() << endl;
     cout << "has department " << DeptChair.departmentName << endl;
+    cout << "has Tax ID " << DeptChair.getTaxID() << endl;
+    cout << "has salary " << DeptChair.getSalary() << endl;
     cout << "and teaches " << DeptChair.className << endl;
 }
 
