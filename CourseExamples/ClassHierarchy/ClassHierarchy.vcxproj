@@ -130,10 +130,13 @@
     <ClCompile Include="ClassHierarchy.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Administrator.h" />
+    <ClInclude Include="AdministratorTeacher.h" />
     <ClInclude Include="CommunityMember.h" />
     <ClInclude Include="Employee.h" />
     <ClInclude Include="Faculty.h" />
     <ClInclude Include="Student.h" />
+    <ClInclude Include="Teacher.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

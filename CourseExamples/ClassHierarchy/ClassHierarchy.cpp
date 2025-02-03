@@ -1,10 +1,13 @@
-// ClassHierarchy.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// ClassHierarchy.cpp : Partial implementation of the hierarchy in course notes
 
 #include <iostream>
 #include "Student.h"
 #include "Employee.h"
 #include "Faculty.h"
+#include "Administrator.h"
+#include "Teacher.h"
+#include "AdministratorTeacher.h"
+
 int main()
 {
     Student NewStudent = Student("Joe Verdietz", "205 Elm St", 2025, "Henderson Hall");
@@ -24,5 +27,15 @@ int main()
     std::cout << Professor.office << endl;
     std::cout << Professor.hasTenure << endl;
 
+    Administrator Admin = Administrator();
+    cout << Admin.getName() << " has department " << Admin.departmentName << endl;
+
+    Teacher Instructor = Teacher();
+    cout << "Instructor " << Instructor.getName() << " runs " << Instructor.className << endl;
+
+    AdministratorTeacher DeptChair = AdministratorTeacher();
+    cout << "Department Chair " << DeptChair.CommunityMember::getName() << endl;
+    cout << "has department " << DeptChair.departmentName << endl;
+    cout << "and teaches " << DeptChair.className << endl;
 }
 
