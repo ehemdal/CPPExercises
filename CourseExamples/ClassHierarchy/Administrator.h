@@ -9,6 +9,7 @@ public:
 	{
 		cout << "Default Administrator constructor called" << endl;
 	}
+
 	Administrator(string dept) : departmentName(dept)
 	{
 		cout << "Administrator constructor called" << endl;
