@@ -15,7 +15,7 @@ public:
     Array(int size); // B
     Array(const Array&); // C
 
-    // Overloading [] operator, will be used as  arr[5] = 25;
+    // Overloading [] (subscript) operator, will be used as  arr[5] = 25;
     int& operator[] (int); // D
 
     // Another overloading [] operator, will be used as int val = arr[5];
@@ -24,15 +24,12 @@ public:
     // overloading copy assignment operator
     Array& operator=(const Array& other); // F
 
+    // Pre- and post-increment operators
     Array& operator ++(); // pre-increment // J
     Array operator ++(int); // post-increment // K
     Array& operator --(); // pre-decrement  // L
     Array operator --(int); // post-decrement // M
 
-    /*
-      we can try to overload move assignment operator of C++11
-      but not today
-    */
 
     /*
       overloading << operator. We have to declare it as friend to access 
@@ -82,7 +79,7 @@ Array::Array(const Array& other)
         m_ptr[i] = other.m_ptr[i];
 }
 
-// D: [] operator: Return an array element at index
+// D: [] operator: Return an array element at index as a modifiable value
 int& Array::operator[](int index)
 {
     if (index >= m_size)
@@ -92,7 +89,7 @@ int& Array::operator[](int index)
     return m_ptr[index];
 }
 
-// E: Return an array element as const
+// E: Return an array element as const (non-modifiable value)
 int Array::operator [] (int index) const {
     if (index >= m_size)
     {
@@ -177,6 +174,7 @@ Array Array::operator --(int dummy) {
 }
 
 
+
 int main()
 {
     cout << "Let's begin!" << endl;
@@ -225,6 +223,7 @@ int main()
     
     // This isn't going to work...
     try {
+        cout << "Displaying an invalid index should fail:" << endl;
         cout << a[15] << endl;
     }
     catch (const std::exception& e) {
