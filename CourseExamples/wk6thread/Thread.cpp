@@ -8,6 +8,8 @@ using namespace std;
 static void func(int x) {
 	cout << "Inside thread " << x << endl;
 	cout << "Thread is waiting for 5 seconds" << endl;
+	// Add a wait to show that the parent process won't finish until the thread
+	// returns
 	this_thread::sleep_for(chrono::seconds(5));
 }
 
