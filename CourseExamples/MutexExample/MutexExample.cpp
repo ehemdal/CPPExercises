@@ -1,3 +1,4 @@
+// MutexExample.cpp 
 #include <iostream>
 #include <thread>
 #include <mutex>
@@ -5,7 +6,7 @@
 using namespace std;
 
 /*
-	Example of using a mutex to synchronize threads, adapted from 
+	Example of using a mutex to synchronize threads, adapted from
 	https://www.geeksforgeeks.org/std-mutex-in-cpp/
 	Run this several times and compare the lock and nolock results.
 */
@@ -22,7 +23,7 @@ static void count_nolock() {
 }
 static void count_lock() {
 	accum_mutex.lock();
-	for (int i = 0; i < 1000000; i++) 
+	for (int i = 0; i < 1000000; i++)
 	{
 		accum_lock++;
 	}

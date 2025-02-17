@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Mutex.cpp">
+    <ClCompile Include="MutexExample.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
