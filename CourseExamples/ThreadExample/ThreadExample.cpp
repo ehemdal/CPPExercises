@@ -1,4 +1,4 @@
-// Thread.cpp: Example of threading and std::this_thread::sleep_for()
+// ThreadExample.cpp: Example of threading and std::this_thread::sleep_for()
 #include <iostream>
 #include <thread>
 #include <chrono>
