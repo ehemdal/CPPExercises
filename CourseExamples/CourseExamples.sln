@@ -45,6 +45,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JthreadExample", "JthreadEx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AtomicVariables", "AtomicVariables\AtomicVariables.vcxproj", "{88D57DFF-4982-490E-BD4D-DCF287832EAB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TextfFig17-1", "TextfFig17-1\TextfFig17-1.vcxproj", "{5089A7C9-9C9D-4027-A7D5-D983B8261A24}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TextFig17-11", "TextFig17-11\TextFig17-11.vcxproj", "{6E0CADCD-0317-408B-90AB-5B677D88A60C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -307,6 +311,30 @@ Global
 		{88D57DFF-4982-490E-BD4D-DCF287832EAB}.Release|x64.Build.0 = Release|x64
 		{88D57DFF-4982-490E-BD4D-DCF287832EAB}.Release|x86.ActiveCfg = Release|Win32
 		{88D57DFF-4982-490E-BD4D-DCF287832EAB}.Release|x86.Build.0 = Release|Win32
+		{5089A7C9-9C9D-4027-A7D5-D983B8261A24}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{5089A7C9-9C9D-4027-A7D5-D983B8261A24}.Debug|Any CPU.Build.0 = Debug|x64
+		{5089A7C9-9C9D-4027-A7D5-D983B8261A24}.Debug|x64.ActiveCfg = Debug|x64
+		{5089A7C9-9C9D-4027-A7D5-D983B8261A24}.Debug|x64.Build.0 = Debug|x64
+		{5089A7C9-9C9D-4027-A7D5-D983B8261A24}.Debug|x86.ActiveCfg = Debug|Win32
+		{5089A7C9-9C9D-4027-A7D5-D983B8261A24}.Debug|x86.Build.0 = Debug|Win32
+		{5089A7C9-9C9D-4027-A7D5-D983B8261A24}.Release|Any CPU.ActiveCfg = Release|x64
+		{5089A7C9-9C9D-4027-A7D5-D983B8261A24}.Release|Any CPU.Build.0 = Release|x64
+		{5089A7C9-9C9D-4027-A7D5-D983B8261A24}.Release|x64.ActiveCfg = Release|x64
+		{5089A7C9-9C9D-4027-A7D5-D983B8261A24}.Release|x64.Build.0 = Release|x64
+		{5089A7C9-9C9D-4027-A7D5-D983B8261A24}.Release|x86.ActiveCfg = Release|Win32
+		{5089A7C9-9C9D-4027-A7D5-D983B8261A24}.Release|x86.Build.0 = Release|Win32
+		{6E0CADCD-0317-408B-90AB-5B677D88A60C}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{6E0CADCD-0317-408B-90AB-5B677D88A60C}.Debug|Any CPU.Build.0 = Debug|x64
+		{6E0CADCD-0317-408B-90AB-5B677D88A60C}.Debug|x64.ActiveCfg = Debug|x64
+		{6E0CADCD-0317-408B-90AB-5B677D88A60C}.Debug|x64.Build.0 = Debug|x64
+		{6E0CADCD-0317-408B-90AB-5B677D88A60C}.Debug|x86.ActiveCfg = Debug|Win32
+		{6E0CADCD-0317-408B-90AB-5B677D88A60C}.Debug|x86.Build.0 = Debug|Win32
+		{6E0CADCD-0317-408B-90AB-5B677D88A60C}.Release|Any CPU.ActiveCfg = Release|x64
+		{6E0CADCD-0317-408B-90AB-5B677D88A60C}.Release|Any CPU.Build.0 = Release|x64
+		{6E0CADCD-0317-408B-90AB-5B677D88A60C}.Release|x64.ActiveCfg = Release|x64
+		{6E0CADCD-0317-408B-90AB-5B677D88A60C}.Release|x64.Build.0 = Release|x64
+		{6E0CADCD-0317-408B-90AB-5B677D88A60C}.Release|x86.ActiveCfg = Release|Win32
+		{6E0CADCD-0317-408B-90AB-5B677D88A60C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
