@@ -21,7 +21,7 @@ int main()
     more_letters.sort();
     std::ranges::copy(letters, output);
     std::cout << std::endl;
-    std::ranges::copy(more_letters, output); //We know it's not empty
+    std::ranges::copy(more_letters, output); 
     letters.merge(more_letters);
     std::cout << "\nNow letters contains: ";
     std::ranges::copy(letters, output);
