@@ -16,7 +16,5 @@ int main()
     std::copy(v3.begin(), v3.end(), output);
     std::cout << "\nBad iterator passed to copy:\n";
     std::copy(v1.begin(), v2.end(), v3.begin());
-
-
     
 }
