@@ -57,6 +57,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BadIterator", "BadIterator\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TextFig12_01-02", "TextFig12_01-02\TextFig12_01-02.vcxproj", "{E48CD848-D825-4F49-B97F-61D6C5DCA8B6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleCoroutine", "SimpleCoroutine\SimpleCoroutine.vcxproj", "{979F5221-0EB7-4969-8585-3FDF34B6DD16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -391,6 +393,18 @@ Global
 		{E48CD848-D825-4F49-B97F-61D6C5DCA8B6}.Release|x64.Build.0 = Release|x64
 		{E48CD848-D825-4F49-B97F-61D6C5DCA8B6}.Release|x86.ActiveCfg = Release|Win32
 		{E48CD848-D825-4F49-B97F-61D6C5DCA8B6}.Release|x86.Build.0 = Release|Win32
+		{979F5221-0EB7-4969-8585-3FDF34B6DD16}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{979F5221-0EB7-4969-8585-3FDF34B6DD16}.Debug|Any CPU.Build.0 = Debug|x64
+		{979F5221-0EB7-4969-8585-3FDF34B6DD16}.Debug|x64.ActiveCfg = Debug|x64
+		{979F5221-0EB7-4969-8585-3FDF34B6DD16}.Debug|x64.Build.0 = Debug|x64
+		{979F5221-0EB7-4969-8585-3FDF34B6DD16}.Debug|x86.ActiveCfg = Debug|Win32
+		{979F5221-0EB7-4969-8585-3FDF34B6DD16}.Debug|x86.Build.0 = Debug|Win32
+		{979F5221-0EB7-4969-8585-3FDF34B6DD16}.Release|Any CPU.ActiveCfg = Release|x64
+		{979F5221-0EB7-4969-8585-3FDF34B6DD16}.Release|Any CPU.Build.0 = Release|x64
+		{979F5221-0EB7-4969-8585-3FDF34B6DD16}.Release|x64.ActiveCfg = Release|x64
+		{979F5221-0EB7-4969-8585-3FDF34B6DD16}.Release|x64.Build.0 = Release|x64
+		{979F5221-0EB7-4969-8585-3FDF34B6DD16}.Release|x86.ActiveCfg = Release|Win32
+		{979F5221-0EB7-4969-8585-3FDF34B6DD16}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
