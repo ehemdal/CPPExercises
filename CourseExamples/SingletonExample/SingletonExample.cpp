@@ -1,5 +1,5 @@
 // SingletonExample.cpp : This shows a singleton class that contains a vector of unique_ptr to int's
-// which is similar to what is needed for Assignment 5.  Notice that you can't just push_back a
+// which is similar to what is needed for Assignment 3.  Notice that you can't just push_back a
 // unique_ptr, it has to be moved from whatever created it to the vector if you're going to 
 // store a number of pointers in a vector.  Failing to do this generates a "deleted function" error
 // deep in generated code that may be mystifying at first.
