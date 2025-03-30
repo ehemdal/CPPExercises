@@ -59,6 +59,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TextFig12_01-02", "TextFig1
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleCoroutine", "SimpleCoroutine\SimpleCoroutine.vcxproj", "{979F5221-0EB7-4969-8585-3FDF34B6DD16}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FeatureTesting", "FeatureTesting\FeatureTesting.vcxproj", "{3FE3CC90-1370-478C-911E-7F8C8D766BED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -405,6 +407,18 @@ Global
 		{979F5221-0EB7-4969-8585-3FDF34B6DD16}.Release|x64.Build.0 = Release|x64
 		{979F5221-0EB7-4969-8585-3FDF34B6DD16}.Release|x86.ActiveCfg = Release|Win32
 		{979F5221-0EB7-4969-8585-3FDF34B6DD16}.Release|x86.Build.0 = Release|Win32
+		{3FE3CC90-1370-478C-911E-7F8C8D766BED}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{3FE3CC90-1370-478C-911E-7F8C8D766BED}.Debug|Any CPU.Build.0 = Debug|x64
+		{3FE3CC90-1370-478C-911E-7F8C8D766BED}.Debug|x64.ActiveCfg = Debug|x64
+		{3FE3CC90-1370-478C-911E-7F8C8D766BED}.Debug|x64.Build.0 = Debug|x64
+		{3FE3CC90-1370-478C-911E-7F8C8D766BED}.Debug|x86.ActiveCfg = Debug|Win32
+		{3FE3CC90-1370-478C-911E-7F8C8D766BED}.Debug|x86.Build.0 = Debug|Win32
+		{3FE3CC90-1370-478C-911E-7F8C8D766BED}.Release|Any CPU.ActiveCfg = Release|x64
+		{3FE3CC90-1370-478C-911E-7F8C8D766BED}.Release|Any CPU.Build.0 = Release|x64
+		{3FE3CC90-1370-478C-911E-7F8C8D766BED}.Release|x64.ActiveCfg = Release|x64
+		{3FE3CC90-1370-478C-911E-7F8C8D766BED}.Release|x64.Build.0 = Release|x64
+		{3FE3CC90-1370-478C-911E-7F8C8D766BED}.Release|x86.ActiveCfg = Release|Win32
+		{3FE3CC90-1370-478C-911E-7F8C8D766BED}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
